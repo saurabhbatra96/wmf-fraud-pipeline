@@ -10,7 +10,7 @@ X = basedata[:, 1:]
 y = basedata[:, 0]
 
 clf = GradientBoostingClassifier()
-clf.fit(X_train, y_train)
+clf.fit(X, y)
 
 import pickle
 with open('../private/gb-clf.pkl', 'w') as sv_file:
