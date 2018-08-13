@@ -15,7 +15,7 @@ A very hacky but working implementation of data extraction, data pre-processing 
 	3. Open `genuine-query.sql` in a text editor, replace "$num" in the last line (limit clause) with the number of fraud rows.
 	4. Save the file and now run `$ mysql < genuine-query.sql | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > ../data/genuine-data.csv`
 	5. Shift to the data folder, `$ cd ../data`
-	6. Concatenate the 2 data files using - `$ cat fraud-data.csv < (tail -n+2 genuine-data.csv) > orig-data.csv`
+	6. Concatenate the 2 data files using - `$ head -n 1 fraud-data.csv > orig-data.csv; tail -n+2 -q genuine-data.csv >> orig-data.csv; tail -n+2 -q fraud-data.csv >> orig-data.csv`
 
 * Once we have the combined data file, we need to pre-process it . Run `$ python feature-eng.py` This should generate a file called `data-eng.csv`.
 
