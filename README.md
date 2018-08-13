@@ -19,7 +19,7 @@ A very hacky but working implementation of data extraction, data pre-processing 
 
 * Once we have the combined data file, we need to pre-process it . Run `$ python feature-eng.py` This should generate a file called `data-eng.csv`.
 
-* Nagivate to the model-training folder - `$ cd ../model-training`. Run `$ python model-train-gb.py`.
+* Navigate to the model-training folder - `$ cd ../model-training`. Run `$ python model-train-gb.py`.
 
 * Copy the contents of the private folder to the private folder in the API. Our new model is loaded!
 
