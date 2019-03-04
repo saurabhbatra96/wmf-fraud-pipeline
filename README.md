@@ -27,3 +27,4 @@ A very hacky but working implementation of data extraction, data pre-processing 
 * The steps are covered in the API README - https://github.com/saurabhbatra96/wmf-fd-api/blob/master/README.md#installation-and-usage
 
 ## Research and Findings
+A complete project summary can be found on my blog [here](http://saurabhbatra96.github.io/2018/08/15/catching-fraud-at-wikipedia/).
